@@ -58,4 +58,5 @@ plt.xlabel("Danceability level")
 plt.ylabel("Popularity level")
 plt.show()
 
-#There is no correlation between the songs' popularity and danceability levels!
+#As the line is almost flat, we can conclude that there is no
+#relationship between the songs' popularity and danceability levels!
