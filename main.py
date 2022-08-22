@@ -24,7 +24,9 @@ plt.hist(x1, bins = 20, color = 'green')
 plt.title("Popularity level of 100 favorite work songs")
 plt.xlabel("Popularity level (on a scale from 0 to 100)")
 plt.ylabel("Number of songs")
+plt.savefig('plots/dance_pop.png')
 plt.show()
+
 
 #let's plot the danceability column
 
@@ -34,7 +36,10 @@ plt.hist(x2, bins = 20, color = 'lightblue')
 plt.title("Danceability level of 100 favorite work songs")
 plt.xlabel("Danceability level (on a scale from 0 to 1)")
 plt.ylabel("Number of songs")
+plt.savefig('plots/dance_hist.png')
 plt.show()
+
+
 
 #Let's see the relationship between them
 
@@ -49,13 +54,17 @@ plt.scatter(x, y)
 plt.title("Danceability vs. Popularity")
 plt.xlabel("Danceability level")
 plt.ylabel("Popularity level")
+plt.savefig('plots/dancepop_scatter.png')
 plt.show()
+
+
 
 #let's also plot a regression line
 ax = sns.regplot(x=x, y=y)
 plt.title("Danceability vs. Popularity")
 plt.xlabel("Danceability level")
 plt.ylabel("Popularity level")
+plt.savefig('plots/dancepop_regression.png')
 plt.show()
 
 #As the line is almost flat, we can conclude that there is no
