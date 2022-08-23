@@ -33,8 +33,6 @@ plt.savefig('machine_learning_plots/dance_lev.png')
 plt.show()
 
 #let's see if danceability and tempo are related with a linear regression
-#As both columns are roughly normally distributed, a simple linear regression likely will be appropriate
-#but we will need to test the distribution of the residuals
 
 lr_df = df[["Tempo", "Danceability"]]
 
