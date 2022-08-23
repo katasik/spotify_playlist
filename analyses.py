@@ -24,7 +24,7 @@ plt.hist(x1, bins = 20, color = 'green')
 plt.title("Popularity level of 100 favorite work songs")
 plt.xlabel("Popularity level (on a scale from 0 to 100)")
 plt.ylabel("Number of songs")
-plt.savefig('plots/dance_pop.png')
+plt.savefig('descriptive_plots/dance_pop.png')
 plt.show()
 
 
@@ -36,7 +36,7 @@ plt.hist(x2, bins = 20, color = 'lightblue')
 plt.title("Danceability level of 100 favorite work songs")
 plt.xlabel("Danceability level (on a scale from 0 to 1)")
 plt.ylabel("Number of songs")
-plt.savefig('plots/dance_hist.png')
+plt.savefig('descriptive_plots/dance_hist.png')
 plt.show()
 
 
@@ -54,7 +54,7 @@ plt.scatter(x, y)
 plt.title("Danceability vs. Popularity")
 plt.xlabel("Danceability level")
 plt.ylabel("Popularity level")
-plt.savefig('plots/dancepop_scatter.png')
+plt.savefig('descriptive_plots/dancepop_scatter.png')
 plt.show()
 
 
@@ -64,7 +64,7 @@ ax = sns.regplot(x=x, y=y)
 plt.title("Danceability vs. Popularity")
 plt.xlabel("Danceability level")
 plt.ylabel("Popularity level")
-plt.savefig('plots/dancepop_regression.png')
+plt.savefig('descriptive_plots/dancepop_regression.png')
 plt.show()
 
 #As the line is almost flat, we can conclude that there is no
